@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Mic, MicOff, Monitor, MonitorOff, ExternalLink, Settings2, Download, RotateCcw, Moon, Sun, ChevronDown, ArrowRight, Languages } from 'lucide-react';
+import { Mic, MicOff, Monitor, MonitorOff, ExternalLink, Settings2, Download, RotateCcw, Moon, Sun, ChevronDown, ArrowRight } from 'lucide-react';
 import { AudioVisualizer } from './components/AudioVisualizer';
 import { SubtitleFeed } from './components/SubtitleFeed';
 import { PIPContent } from './components/PIPContent';
@@ -115,9 +115,7 @@ function MainApp({ dark, setDark }: { dark: boolean; setDark: (v: boolean) => vo
         {/* Navigation bar */}
         <nav className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
-              <Languages size={16} className="text-brand-text" />
-            </div>
+            <img src="/logo.png" alt="EchoBridge logo" className="w-8 h-8 rounded-full" />
             <span className="text-base font-semibold text-text-primary">EchoBridge</span>
           </div>
           <div className="flex items-center gap-2">
