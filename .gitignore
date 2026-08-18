@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+*.pyc
+__pycache__/
+.env
+*.egg-info/
+backend/static/
+backend/dist/
+backend/build/
+backend/*.spec
+.vite/
+*.exe
